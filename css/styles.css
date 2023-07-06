@@ -20,7 +20,7 @@ body {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #fff;
+    background-color: #444;
 }
 
 img {
@@ -40,5 +40,112 @@ img {
 /* MAIN CONTENT */
 .main-content {
     flex-grow: 1;
-    padding: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+
+/* Form content */
+
+.profile-settings {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(220, 220, 21);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.profile-settings-form {
+}
+.profile-settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.profile-settings-title {
+    margin: 0;
+    font-size: 20px;
+}
+.profile-settings-close-link {
+    display: flex;
+}
+.profile-settings-form-body {
+    background-color: #fff;
+    padding: 40px 30px;
+    position: relative;
+    left: 40px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
+}
+.form-avatar {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+.profile-settings-form-row {
+    display: flex;   
+}
+
+.profile-settings-form-row:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.profile-settings-form-group:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.profile-settings-form-row  .profile-settings-form-group {
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.profile-settings-form-group {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.profile-settings-form-label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 4px;
+}
+.profile-settings-form-field {
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    outline: 0;
+}
+.profile-settings-form-field-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.profile-settings-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+}
+.profile-settings-form-action {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.profile-settings-form-action+.profile-settings-form-action {
+    margin-left: 40px;
+}
+
+/* .profile-settings-form-action:not(:last-child) {
+    margin-right: 40px;
+} */
